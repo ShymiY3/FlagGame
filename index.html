@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous" />
   </head>
+
   <body>
-    <div class="top-bar"></div>
+    <div class="top-bar">
+      <div class="options">
+        <i class="bi bi-list"></i>
+      </div>
+      <div class="scoreboard-container" id="scoreboardContainer">
+        <div class="button-container">
+          <button class="scoreboard-button" id="startButton">Start</button>
+          <button class="scoreboard-button" id="restartButton" style="display: none">Restart</button>
+        </div>
+        <div class="guess-container">
+          Guess:
+          <div class="guess-text" id="guessText"></div>
+        </div>
+        <div class="score-time-container">
+          <div class="score-container">
+            Score
+            <div class="score-text" id="scoreText"">0/0</div>
+          </div>
+          <div class="time-container">
+            Time
+            <div class="time-text" id="timeText">0:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="content">
       <div class="flag-container" id="flagContainer"></div>
     </div>
     <script type="module" src="./dist/script.js"></script>
   </body>
+
 </html>
